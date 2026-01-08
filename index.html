@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sponsor Tiers</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            overflow-y: hidden;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background: url('https://images.unsplash.com/photo-1598397846776-396780738a44?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center/cover fixed no-repeat;
+            padding: 30px 10px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+            background: transparent;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+        }
+        
+        .header {
+            background: transparent;
+            padding: 10px 20px;
+            text-align: center;
+            border-bottom: 4px solid #1a1a1a;
+        }
+        
+        .header h1 {
+            font-size: 36px;
+            font-weight: 900;
+            letter-spacing: 3px;
+            color: #1a1a1a;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .tiers-wrapper {
+            display: flex;
+            min-height: auto;
+        }
+        
+        .tier {
+            flex: 1;
+            padding: 20px 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            border-right: 4px solid #1a1a1a;
+        }
+        
+        .tier:last-child {
+            border-right: none;
+        }
+        
+        .gold {
+            background: rgba(255, 215, 0, 0);
+        }
+        
+        .silver {
+            background: transparent;
+        }
+        
+        .bronze {
+            background: transparent;
+        }
+        
+        .tier-title {
+            font-size: 38px;
+            font-weight: 900;
+            text-decoration: underline;
+            margin-bottom: 30px;
+            letter-spacing: 2px;
+        }
+        
+        .gold .tier-title {
+            color: #b8860b;
+        }
+        
+        .silver .tier-title {
+            color: #888888;
+        }
+        
+        .bronze .tier-title {
+            color: #654321;
+        }
+        
+        .sponsor-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 100%;
+        }
+        
+        .sponsor-list.two-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+        
+        .sponsor-item {
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.8);
+            border: 2px solid #333;
+            border-radius: 4px;
+            min-height: 90px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            overflow: hidden;
+        }
+        
+        .silver .sponsor-item {
+            padding: 10px;
+            min-height: 60px;
+        }
+        
+        .bronze .sponsor-item {
+            padding: 10px;
+            min-height: 60px;
+        }
+        
+        .sponsor-item img {
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+        }
+        
+        .circular-thumb {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>WE WOULD LIKE TO THANK OUR SPONSORS</h1>
+        </div>
+        
+        <div class="tiers-wrapper">
+            <!-- GOLD TIER -->
+            <div class="tier gold">
+                <div class="tier-title">GOLD</div>
+                <div class="sponsor-list">
+                    <div class="sponsor-item">
+                        <p><img src="newyorklife-f.jpg" alt="new york life"></p>
+                    </div>
+                    <div class="sponsor-item">
+                        <p><img src="terracon.jpg" alt="terracon"></p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- SILVER TIER -->
+            <div class="tier silver">
+                <div class="tier-title">SILVER</div>
+                <div class="sponsor-list two-columns">
+                    <div class="sponsor-item">
+                        <p><img src="NIVA-GROCERS.jpg" alt="niva grocers"></p>
+                    </div>
+                    <div class="sponsor-item">
+                        <p><img src="biryani_pot_4.jpg" alt="biryani pot"></p>
+                    </div>
+                    <div class="sponsor-item">
+                        <p style="font-size: 1.5em;"><img class="circular-thumb" src="aditi_3.jpg" alt="aditi"><br><b>Dr. Aditi Girme</b></p>
+                    </div>
+                    <div class="sponsor-item">
+                        <p style="font-size: 1.5em;"><b>Jack Scott</b></p>
+                    </div>
+                    <div class="sponsor-item">
+                        <p style="font-size: 1.5em;"><b>George Webb</b></p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- BRONZE TIER -->
+            <div class="tier bronze">
+                <div class="tier-title">BRONZE</div>
+                <div class="sponsor-list two-columns">
+                    <div class="sponsor-item">
+                        <p><img src="raghuveer_reddy.jpg" alt="raghuveer reddy"></p>
+                    </div>
+                    <div class="sponsor-item">
+                        <p><img src="bombay_grocers.jpg" alt="bombay grocers"></p>
+                    </div>
+                    <div class="sponsor-item">
+                        <p><img src="namaste_india-2.jpg" alt="namaste india"></p>
+                    </div>
+                    <div class="sponsor-item">
+                        <p><img src="brain_booster.jpg" alt="brain booster"></p>
+                    </div>
+                    
+                    <div class="sponsor-item">
+                        <p><img src="hari.jpg" alt="hari"></p>
+                    </div>
+                    <div class="sponsor-item">
+                        <p><img src="nachiket.jpg" alt="nachiket"></p>
+                    </div>
+		    <div class="sponsor-item">
+                        <p style="font-size: 1.5em;"><img class="circular-thumb" src="trupti_3.jpg" alt="trupti"><br><b>Trupti Karande</b></p>
+                    </div>
+                    <div class="sponsor-item">
+                        <p style="font-size: 1.5em;"><b>Preethi</b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
