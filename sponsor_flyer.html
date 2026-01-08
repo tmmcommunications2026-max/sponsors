@@ -18,17 +18,24 @@
         body {
             font-family: Arial, sans-serif;
             background: url('https://images.unsplash.com/photo-1598397846776-396780738a44?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center/cover fixed no-repeat;
-            padding: 30px 10px;
+            padding: 0;
             min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         
         .container {
-            max-width: 1600px;
+            max-width: 1920px;
+            width: 100%;
+            height: 1080px;
             margin: 0 auto;
             background: transparent;
             border-radius: 8px;
             overflow: hidden;
             box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+            display: flex;
+            flex-direction: column;
         }
         
         .header {
@@ -50,6 +57,7 @@
         .tiers-wrapper {
             display: flex;
             min-height: auto;
+            flex: 1;
         }
         
         .tier {
@@ -208,15 +216,14 @@
                     <div class="sponsor-item">
                         <p><img src="brain_booster.jpg" alt="brain booster"></p>
                     </div>
-                    
+                    <div class="sponsor-item">
+                        <p style="font-size: 1.5em;"><img class="circular-thumb" src="trupti_3.jpg" alt="trupti"><br><b>Trupti Karande</b></p>
+                    </div>
                     <div class="sponsor-item">
                         <p><img src="hari.jpg" alt="hari"></p>
                     </div>
                     <div class="sponsor-item">
                         <p><img src="nachiket.jpg" alt="nachiket"></p>
-                    </div>
-		    <div class="sponsor-item">
-                        <p style="font-size: 1.5em;"><img class="circular-thumb" src="trupti_3.jpg" alt="trupti"><br><b>Trupti Karande</b></p>
                     </div>
                     <div class="sponsor-item">
                         <p style="font-size: 1.5em;"><b>Preethi</b></p>
