@@ -130,6 +130,23 @@
             justify-content: center;
             text-align: center;
             overflow: hidden;
+            font-size: clamp(0.9rem, 1.2vw, 1.5rem);
+        }
+        
+        .sponsor-item p {
+            font-size: inherit;
+        }
+        
+        .sponsor-name {
+            font-size: clamp(1.1rem, 1.5vw, 1.8rem);
+        }
+        
+        .sponsor-name:has(img.circular-thumb) {
+            font-size: clamp(0.8rem, 1vw, 1.2rem);
+        }
+        
+        .sponsor-name:has(img.circular-thumb) b {
+            font-size: inherit;
         }
         
         .silver .sponsor-item {
@@ -189,7 +206,7 @@
                         <p><img src="biryani_pot_4.jpg" alt="biryani pot"></p>
                     </div>
                     <div class="sponsor-item">
-                        <p style="font-size: 1.5em;"><img class="circular-thumb" src="aditi_3.jpg" alt="aditi"><br><b>Dr. Aditi Girme</b></p>
+                        <p class="sponsor-name"><img class="circular-thumb" src="aditi_3.jpg" alt="aditi"><br><b>Dr. Aditi Girme</b></p>
                     </div>
                 </div>
             </div>
@@ -211,13 +228,13 @@
                         <p><img src="brain_booster.jpg" alt="brain booster"></p>
                     </div>
                     <div class="sponsor-item">
+                        <p class="sponsor-name"><img class="circular-thumb" src="trupti_3.jpg" alt="trupti"><br><b>Trupti Karande</b></p>
+                    </div>
+                    <div class="sponsor-item">
                         <p><img src="hari.jpg" alt="hari"></p>
                     </div>
                     <div class="sponsor-item">
                         <p><img src="nachiket.jpg" alt="nachiket"></p>
-                    </div>
-                     <div class="sponsor-item">
-                        <p style="font-size: 1.5em;"><img class="circular-thumb" src="trupti_3.jpg" alt="trupti"><br><b>Trupti Karande</b></p>
                     </div>
                 </div>
             </div>
